@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources revision="1.0" schemaVersion="1.0">
+	<displayName />
+	<description />
+	<resources>
+		<stringTable>
+			<string id="Application">Visual Studio Code</string>
+			<string id="Supported_1_101">Visual Studio Code &gt;= 1.101</string>
+			<string id="Supported_1_104">Visual Studio Code &gt;= 1.104</string>
+			<string id="Supported_1_67">Visual Studio Code &gt;= 1.67</string>
+			<string id="Supported_1_96">Visual Studio Code &gt;= 1.96</string>
+			<string id="Supported_1_99">Visual Studio Code &gt;= 1.99</string>
+			<string id="Category_terminalIntegratedConfigurationTitle">Terminale integrato</string>
+			<string id="Category_extensionsConfigurationTitle">Estensioni</string>
+			<string id="Category_interactiveSessionConfigurationTitle">Chat</string>
+			<string id="Category_updateConfigurationTitle">Aggiorna</string>
+			<string id="Category_telemetryConfigurationTitle">Telemetria</string>
+			<string id="ChatToolsTerminalEnableAutoApprove">ChatToolsTerminalEnableAutoApprove</string>
+			<string id="ChatToolsTerminalEnableAutoApprove_autoApproveMode_description">Controlla se consentire l'approvazione automatica nell'esecuzione dello strumento terminale.</string>
+			<string id="ExtensionGalleryServiceUrl">ExtensionGalleryServiceUrl</string>
+			<string id="ExtensionGalleryServiceUrl_extensions_gallery_serviceUrl">Configurare l'URL del servizio Marketplace a cui connettersi</string>
+			<string id="ChatToolsAutoApprove">ChatToolsAutoApprove</string>
+			<string id="ChatToolsAutoApprove_autoApprove2_description">Global auto approve also known as "YOLO mode" disables manual approval completely for all tools in all workspaces, allowing the agent to act fully autonomously. This is extremely dangerous and is *never* recommended, even containerized environments like Codespaces and Dev Containers have user keys forwarded into the container that could be compromised.
+
+This feature disables critical security protections and makes it much easier for an attacker to compromise the machine.</string>
+			<string id="ChatMCP">ChatMCP</string>
+			<string id="ChatMCP_chat_mcp_access">Controls access to Model Context Protocol servers.</string>
+			<string id="ChatAgentExtensionTools">ChatAgentExtensionTools</string>
+			<string id="ChatAgentExtensionTools_chat_extensionToolsPolicy">Abilita l'uso degli strumenti forniti dalle estensioni di terze parti.</string>
+			<string id="ChatAgentMode">ChatAgentMode</string>
+			<string id="ChatAgentMode_chat_agent_enabled_description">Enable agent mode for chat. When this is enabled, agent mode can be activated via the dropdown in the view.</string>
+			<string id="McpGalleryServiceUrl">McpGalleryServiceUrl</string>
+			<string id="McpGalleryServiceUrl_mcp_gallery_serviceUrl">Configura l'URL del servizio Galleria MCP a cui connetterti</string>
+			<string id="ChatPromptFiles">ChatPromptFiles</string>
+			<string id="ChatPromptFiles_chat_promptFiles_policy">Abilita i file di richieste e istruzioni riutilizzabili nelle sessioni di chat.</string>
+			<string id="UpdateMode">UpdateMode</string>
+			<string id="UpdateMode_updateMode">Consente di configurare la ricezione degli aggiornamenti automatici. Richiede un riavvio dopo la modifica. Gli aggiornamenti vengono recuperati da un servizio online Microsoft.</string>
+			<string id="UpdateMode_none">Disabilita gli aggiornamenti.</string>
+			<string id="UpdateMode_manual">Disabilita il controllo automatico degli aggiornamenti in background. Gli aggiornamenti saranno disponibili solo se il controllo della disponibilità di aggiornamenti viene eseguito manualmente.</string>
+			<string id="UpdateMode_start">Controlla la disponibilità di aggiornamenti solo all'avvio. Disabilita i controlli automatici degli aggiornamenti in background.</string>
+			<string id="UpdateMode_default">Abilita il controllo automatico degli aggiornamenti. Code controlla periodicamente la disponibilità di aggiornamenti in modo automatico.</string>
+			<string id="TelemetryLevel">TelemetryLevel</string>
+			<string id="TelemetryLevel_telemetry_telemetryLevel_policyDescription">Controlla il livello di telemetria.</string>
+			<string id="EnableFeedback">EnableFeedback</string>
+			<string id="EnableFeedback_telemetry_feedback_enabled">Abilita meccanismi di feedback come la segnalazione di problemi, i sondaggi e altre opzioni di feedback.</string>
+			<string id="AllowedExtensions">AllowedExtensions</string>
+			<string id="AllowedExtensions_extensions_allowed_policy">Specifica un elenco di estensioni che possono essere utilizzate. Ciò aiuta a mantenere un ambiente di sviluppo sicuro e coerente, limitando l'uso di estensioni non autorizzate. Altre informazioni: https://code.visualstudio.com/docs/setup/enterprise#_configure-allowed-extensions</string>
+		</stringTable>
+		<presentationTable>
+			<presentation id="ChatToolsTerminalEnableAutoApprove"><checkBox refId="ChatToolsTerminalEnableAutoApprove">ChatToolsTerminalEnableAutoApprove</checkBox></presentation>
+			<presentation id="ExtensionGalleryServiceUrl"><textBox refId="ExtensionGalleryServiceUrl"><label>ExtensionGalleryServiceUrl:</label></textBox></presentation>
+			<presentation id="ChatToolsAutoApprove"><checkBox refId="ChatToolsAutoApprove">ChatToolsAutoApprove</checkBox></presentation>
+			<presentation id="ChatMCP"><textBox refId="ChatMCP"><label>ChatMCP:</label></textBox></presentation>
+			<presentation id="ChatAgentExtensionTools"><checkBox refId="ChatAgentExtensionTools">ChatAgentExtensionTools</checkBox></presentation>
+			<presentation id="ChatAgentMode"><checkBox refId="ChatAgentMode">ChatAgentMode</checkBox></presentation>
+			<presentation id="McpGalleryServiceUrl"><textBox refId="McpGalleryServiceUrl"><label>McpGalleryServiceUrl:</label></textBox></presentation>
+			<presentation id="ChatPromptFiles"><checkBox refId="ChatPromptFiles">ChatPromptFiles</checkBox></presentation>
+			<presentation id="UpdateMode"><dropdownList refId="UpdateMode" /></presentation>
+			<presentation id="TelemetryLevel"><textBox refId="TelemetryLevel"><label>TelemetryLevel:</label></textBox></presentation>
+			<presentation id="EnableFeedback"><checkBox refId="EnableFeedback">EnableFeedback</checkBox></presentation>
+			<presentation id="AllowedExtensions"><multiTextBox refId="AllowedExtensions" /></presentation>
+		</presentationTable>
+	</resources>
+</policyDefinitionResources>
